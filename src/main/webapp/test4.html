@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Skeleton
+  File name(文件名): test4
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/2
+  Time(创建时间)： 20:19
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <el-skeleton style="width: 480px" animated>
+        <template slot="template">
+            <el-skeleton-item variant="image" style="width: 240px; height: 240px;"></el-skeleton-item>
+            <el-skeleton-item variant="image" style="width: 480px; height: 240px;"></el-skeleton-item>
+            <div style="padding: 14px;">
+                <el-skeleton-item variant="p" style="width: 50%"></el-skeleton-item>
+                <div style="display: flex; align-items: center; justify-items: space-between;">
+                    <el-skeleton-item variant="text" style="margin-right: 16px;"></el-skeleton-item>
+                    <el-skeleton-item variant="text" style="width: 30%;"></el-skeleton-item>
+                </div>
+                <el-skeleton-item v-for="item in 5" variant="text" style="margin-right: 16px;"></el-skeleton-item>
+            </div>
+        </template>
+    </el-skeleton>
+</div>
+
+<script>
+    var app = new Vue(
+        {
+            el: "#app",
+            data: {},
+            methods: {},
+            mounted()
+            {
+
+            }
+        }
+    )
+</script>
+</body>
+</html>
